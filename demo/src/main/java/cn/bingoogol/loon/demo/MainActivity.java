@@ -3,7 +3,6 @@ package cn.bingoogol.loon.demo;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 
-import cn.bingoogol.loon.R;
 import cn.bingoogol.loon.library.Loon;
 import cn.bingoogol.loon.library.LoonLayout;
 

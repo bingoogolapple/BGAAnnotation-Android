@@ -47,6 +47,20 @@ afterEvaluate { project ->
                     description POM_DESCRIPTION
                     url POM_URL
 
+                    scm {
+                        url POM_SCM_URL
+                        connection POM_SCM_CONNECTION
+                        developerConnection POM_SCM_DEV_CONNECTION
+                    }
+
+                    licenses {
+                        license {
+                            name 'The Apache Software License, Version 2.0'
+                            url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                            distribution 'repo'
+                        }
+                    }
+
                     developers {
                         developer {
                             id POM_DEVELOPER_ID

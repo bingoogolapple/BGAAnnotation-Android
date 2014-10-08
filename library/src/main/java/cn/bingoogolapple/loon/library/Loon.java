@@ -1,4 +1,4 @@
-package cn.bingoogol.loon.library;
+package cn.bingoogolapple.loon.library;
 
 import android.app.Activity;
 import android.app.Dialog;

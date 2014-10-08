@@ -1,4 +1,4 @@
-package cn.bingoogol.loon.library;
+package cn.bingoogolapple.loon.library;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,6 +7,6 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface LoonView {
+public @interface LoonSaveInstance {
     int id();
 }

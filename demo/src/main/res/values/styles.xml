@@ -1,8 +1,27 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="@android:Theme.Light">
+    <style name="AppTheme" parent="@style/Theme.Splash">
         <!-- Customize your theme here. -->
+    </style>
+
+    <style name="line_tab" parent="@style/one_match">
+        <item name="android:background">@color/tab_divider</item>
+        <item name="android:layout_marginTop">@dimen/size_small</item>
+        <item name="android:layout_marginBottom">@dimen/size_small</item>
+    </style>
+
+    <style name="tab_rb" parent="@style/auto_match">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@color/text_tab</item>
+        <item name="android:textSize">@dimen/textSize_middle</item>
+        <item name="android:paddingTop">@dimen/size_small</item>
+        <item name="android:paddingBottom">@dimen/size_small</item>
+        <item name="android:drawableBottom">@drawable/selector_tab_underline</item>
+        <item name="android:layout_marginLeft">@dimen/size_small</item>
+        <item name="android:layout_marginRight">@dimen/size_small</item>
     </style>
 
 </resources>

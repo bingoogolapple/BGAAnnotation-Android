@@ -3,6 +3,7 @@
     android:gravity="center"
     android:background="@android:color/white">
 
-    <TextView
-       style="@style/WrapWrap" android:text="One" />
+    <Button
+        android:id="@+id/btn_one_dataload"
+       style="@style/WrapWrap" android:text="ShowDataLoadDialog" />
 </LinearLayout>

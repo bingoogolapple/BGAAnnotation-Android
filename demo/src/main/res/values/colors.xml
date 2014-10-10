@@ -4,4 +4,5 @@
     <color name="tab_top_text_unpressed">#B0B0B0</color>
     <color name="tab_top_divider">#EAEAEA</color>
     <color name="tab_top_underline">#409BE4</color>
+    <color name="dialog_stroke">#E9E9E9</color>
 </resources>

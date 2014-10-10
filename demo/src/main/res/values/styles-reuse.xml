@@ -7,6 +7,12 @@
     <style name="BGA.Tab"/>
     <style name="BGA.Weidget"/>
 
+    <style name="BGA.Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
     <style name="WrapMatch">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">match_parent</item>

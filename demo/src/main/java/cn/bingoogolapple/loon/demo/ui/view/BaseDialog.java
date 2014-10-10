@@ -20,7 +20,7 @@ public abstract class BaseDialog extends Dialog implements View.OnClickListener 
         super(context, theme);
     }
 
-    protected BaseDialog(Context context, boolean cancelable, OnCancelListener cancelListener) {
+    public BaseDialog(Context context, boolean cancelable, OnCancelListener cancelListener) {
         super(context, cancelable, cancelListener);
     }
 

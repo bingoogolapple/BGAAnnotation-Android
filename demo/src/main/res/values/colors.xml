@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="tab_text_pressed">#3A95E3</color>
-    <color name="tab_text_unpressed">#B0B0B0</color>
-    <color name="tab_divider">#EAEAEA</color>
-    <color name="tab_underline">#409BE4</color>
+    <color name="tab_top_text_pressed">#3A95E3</color>
+    <color name="tab_top_text_unpressed">#B0B0B0</color>
+    <color name="tab_top_divider">#EAEAEA</color>
+    <color name="tab_top_underline">#409BE4</color>
 </resources>

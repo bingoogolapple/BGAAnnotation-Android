@@ -6,6 +6,6 @@
         android:height="@dimen/size_divider"
         android:width="600dp" />
 
-    <solid android:color="@color/tab_underline" />
+    <solid android:color="@color/tab_top_underline" />
 
 </shape>

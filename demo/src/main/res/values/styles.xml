@@ -1,27 +1,54 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="@style/Theme.Splash">
-        <!-- Customize your theme here. -->
+    <style name="BGA.Theme.Translucent" parent="@style/BGA.Theme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
     </style>
 
-    <style name="line_tab" parent="@style/one_match">
-        <item name="android:background">@color/tab_divider</item>
-        <item name="android:layout_marginTop">@dimen/size_small</item>
-        <item name="android:layout_marginBottom">@dimen/size_small</item>
+    <style name="BGA.Tab.RadioGroup">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
     </style>
 
-    <style name="tab_rb" parent="@style/auto_match">
-        <item name="android:background">@android:color/white</item>
+    <style name="BGA.Tab.RadioGroup.Top" parent="@style/BGA.Tab.RadioGroup">
+        <item name="android:layout_height">@dimen/rg_height_top</item>
+    </style>
+
+    <style name="BGA.Tab.RadioGroup.Bottom" parent="@style/BGA.Tab.RadioGroup">
+        <item name="android:layout_height">@dimen/rg_height_bottom</item>
+    </style>
+
+    <style name="BGA.Tab.Line" parent="@style/OneMatch">
+        <item name="android:background">@color/tab_top_divider</item>
+        <item name="android:layout_marginTop">@dimen/size_middle</item>
+        <item name="android:layout_marginBottom">@dimen/size_middle</item>
+    </style>
+
+    <style name="BGA.Tab.RadioButton" parent="@style/AutoMatch">
         <item name="android:gravity">center</item>
         <item name="android:button">@null</item>
-        <item name="android:textColor">@color/text_tab</item>
-        <item name="android:textSize">@dimen/textSize_middle</item>
+    </style>
+
+    <style name="BGA.Tab.RadioButton.Top" parent="@style/BGA.Tab.RadioButton">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textColor">@color/tab_top_text</item>
+        <item name="android:textSize">@dimen/textSize_small</item>
         <item name="android:paddingTop">@dimen/size_small</item>
         <item name="android:paddingBottom">@dimen/size_small</item>
         <item name="android:drawableBottom">@drawable/selector_tab_underline</item>
-        <item name="android:layout_marginLeft">@dimen/size_small</item>
-        <item name="android:layout_marginRight">@dimen/size_small</item>
+        <item name="android:layout_marginLeft">@dimen/size_middle</item>
+        <item name="android:layout_marginRight">@dimen/size_middle</item>
+    </style>
+
+    <style name="BGA.Tab.RadioButton.Bottom" parent="@style/BGA.Tab.RadioButton">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textColor">@color/tab_top_text</item>
+        <item name="android:textSize">@dimen/textSize_middle</item>
+        <item name="android:paddingTop">@dimen/size_small</item>
+        <item name="android:paddingBottom">@dimen/size_small</item>
     </style>
 
 </resources>

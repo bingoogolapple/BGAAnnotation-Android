@@ -53,7 +53,7 @@ public abstract class LoonRecyclerAdapter<T, V> extends BaseAdapter {
             } catch (Exception e) {
                 throw new RuntimeException(mViewHolderClazz.getName() + "没有空的构造方法");
             }
-            convertView = Loon.injectView2ViewHolder(viewHolder, mContext);
+            convertView = Loon.injectView2ViewHolderOrFragment(viewHolder, mContext);
             convertView.setTag(viewHolder);
         }
         initViewHolder((V) convertView.getTag(), mDatas.get(position));

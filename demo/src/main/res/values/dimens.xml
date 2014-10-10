@@ -12,5 +12,6 @@
     <dimen name="iconSize_middle">50dp</dimen>
     <dimen name="iconSize_large">65dp</dimen>
 
-    <dimen name="tab_height">40dp</dimen>
+    <dimen name="rg_height_top">40dp</dimen>
+    <dimen name="rg_height_bottom">60dp</dimen>
 </resources>

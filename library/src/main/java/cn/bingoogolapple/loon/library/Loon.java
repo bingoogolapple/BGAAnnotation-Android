@@ -18,11 +18,11 @@ public class Loon {
     /**
      * 注入控件属性，并返回这些控件属性的父视图
      *
-     * @param obj     包含控件属性的实例对象（例如ViewHolder）
+     * @param obj     包含控件属性的实例对象（例如ViewHolder或者Fragment）
      * @param context 应用程序上下文
-     * @return 返回父视图（例如ListView优化中的convertView）
+     * @return 返回父视图（例如ListView优化中的convertView或者Fragment中onCreateView方法返回的视图）
      */
-    public static View injectView2ViewHolder(Object obj, Context context) {
+    public static View injectView2ViewHolderOrFragment(Object obj, Context context) {
         View parent = initParentView(obj, context);
         injectViewField2Obj(obj, parent);
         return parent;

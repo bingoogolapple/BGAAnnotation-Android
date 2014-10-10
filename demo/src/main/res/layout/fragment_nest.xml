@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchMatchVertical"
+    android:background="@android:color/white">
+
+    <RadioGroup
+        android:id="@+id/rg_nest_tab"
+        style="@style/BGA.Tab.RadioGroup.Top">
+
+        <RadioButton
+            android:id="@+id/rb_nest_one"
+            style="@style/BGA.Tab.RadioButton.Top"
+            android:checked="true"
+            android:text="TabOne" />
+
+        <View style="@style/BGA.Tab.Line" />
+
+        <RadioButton
+            android:id="@+id/rb_nest_two"
+            style="@style/BGA.Tab.RadioButton.Top"
+            android:text="TabTwo" />
+
+        <View style="@style/BGA.Tab.Line" />
+
+        <RadioButton
+            android:id="@+id/rb_nest_three"
+            style="@style/BGA.Tab.RadioButton.Top"
+            android:text="TabThree" />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_nest_pager"
+        style="@style/MatchAuto" />
+</LinearLayout>

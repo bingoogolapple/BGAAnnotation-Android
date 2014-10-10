@@ -34,7 +34,7 @@
 
     <style name="BGA.Tab.RadioButton.Top" parent="@style/BGA.Tab.RadioButton">
         <item name="android:background">@android:color/white</item>
-        <item name="android:textColor">@color/tab_top_text</item>
+        <item name="android:textColor">@color/tab_top_rb</item>
         <item name="android:textSize">@dimen/textSize_small</item>
         <item name="android:paddingTop">@dimen/size_small</item>
         <item name="android:paddingBottom">@dimen/size_small</item>
@@ -45,7 +45,7 @@
 
     <style name="BGA.Tab.RadioButton.Bottom" parent="@style/BGA.Tab.RadioButton">
         <item name="android:background">@android:color/white</item>
-        <item name="android:textColor">@color/tab_top_text</item>
+        <item name="android:textColor">@color/tab_top_rb</item>
         <item name="android:textSize">@dimen/textSize_middle</item>
         <item name="android:paddingTop">@dimen/size_small</item>
         <item name="android:paddingBottom">@dimen/size_small</item>

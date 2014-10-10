@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:drawable="@drawable/shape_dialog_btn" android:state_pressed="true"/>
-    <item android:drawable="@drawable/shape_dialog_btn" android:state_focused="true"/>
-    <item android:drawable="@drawable/shape_white"/>
+    <item android:drawable="@drawable/shape_dialog_btn_gray" android:state_pressed="true"/>
+    <item android:drawable="@drawable/shape_dialog_btn_gray" android:state_focused="true"/>
+    <item android:drawable="@drawable/shape_dialog_btn_white"/>
 
 </selector>

@@ -17,13 +17,13 @@ import cn.bingoogolapple.loon.library.LoonView;
 public class DataLoadDialog extends BaseDialog {
     @LoonView(id = R.id.iv_dataload_progress)
     private ImageView mProgressIv;
-    @LoonView(id = R.id.tv_dataload_msg)
+    @LoonView(id = R.id.tv_dialog_msg)
     private TextView mMsgTv;
     private String mMsg;
     private AnimationDrawable mAd;
 
     public DataLoadDialog(Context context) {
-        super(context,R.style.BGA_Dialog);
+        super(context, R.style.BGA_Dialog);
     }
 
     @Override

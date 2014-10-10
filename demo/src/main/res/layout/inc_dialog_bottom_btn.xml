@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrapHorizontal" >
+
+    <Button
+        android:id="@+id/btn_dialog_negative"
+        style="@style/BGA.Button.Dialog"
+        android:text="取消" />
+
+    <View style="@style/BGA.DialogVLine" />
+
+    <Button
+        android:id="@+id/btn_dialog_positive"
+        style="@style/BGA.Button.Dialog"
+        android:text="确定" />
+
+</LinearLayout>

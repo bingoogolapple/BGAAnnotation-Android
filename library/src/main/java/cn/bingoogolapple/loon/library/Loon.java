@@ -45,9 +45,15 @@ public class Loon {
      * @param dialog 自定义对话框实例对象
      */
     public static void injectView2Dialog(Dialog dialog) {
-        View parent = initParentView(dialog, dialog.getContext());
-        injectViewField2Obj(dialog, parent);
-        dialog.setContentView(parent);
+        LoonLayout loonLayout = dialog.getClass().getAnnotation(LoonLayout.class);
+        if (loonLayout != null) {
+            // dialog要指定布局id,否则指定layout_width不生效
+            dialog.setContentView(loonLayout.id());
+            injectViewField2Obj(dialog, dialog.getWindow().getDecorView());
+        } else {
+            throw new RuntimeException(LAYOUT_RES_ID_TIP);
+        }
+
     }
 
     /**

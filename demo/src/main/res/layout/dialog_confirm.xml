@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dialog_root_width"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        style="@style/BGA.DialogTitle"
+        android:text="操作提示"/>
+
+    <TextView
+        android:id="@+id/tv_dialog_msg"
+        style="@style/BGA.DialogMsg"
+        android:text="我是消息" />
+
+    <View style="@style/BGA.DialogHLine" />
+
+    <include layout="@layout/inc_dialog_bottom_btn" />
+
+</LinearLayout>

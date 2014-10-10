@@ -6,4 +6,10 @@
     <Button
         android:id="@+id/btn_one_dataload"
        style="@style/WrapWrap" android:text="ShowDataLoadDialog" />
+
+    <Button
+        android:id="@+id/btn_one_confirm"
+        android:layout_margin="@dimen/size_small"
+        style="@style/WrapWrap" android:text="ShowConfirmDialog" />
+
 </LinearLayout>

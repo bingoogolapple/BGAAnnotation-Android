@@ -5,7 +5,7 @@
     </style>
 
     <style name="BGA.Tab"/>
-    <style name="BGA.Weidget"/>
+    <style name="BGA.Button"/>
 
     <style name="BGA.Dialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowNoTitle">true</item>

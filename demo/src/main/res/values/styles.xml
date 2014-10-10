@@ -51,4 +51,42 @@
         <item name="android:paddingBottom">@dimen/size_small</item>
     </style>
 
+
+    <style name="BGA.DialogTitle" parent="@style/MatchWrap">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:gravity">left</item>
+        <item name="android:paddingTop">@dimen/size_middle</item>
+        <item name="android:paddingRight">@dimen/size_middle</item>
+        <item name="android:paddingLeft">@dimen/size_middle</item>
+        <item name="android:paddingBottom">@dimen/size_small</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/textSize_middle</item>
+        <item name="android:drawableBottom">@drawable/shape_dialog_title_line</item>
+    </style>
+
+    <style name="BGA.DialogMsg" parent="@style/MatchWrap">
+        <item name="android:gravity">left</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:padding">@dimen/size_middle</item>
+        <item name="android:textColor">@color/tab_top_text_unpressed</item>
+        <item name="android:textSize">@dimen/textSize_small</item>
+    </style>
+
+
+    <style name="BGA.DialogHLine" parent="@style/MatchOne">
+        <item name="android:background">@color/dialog_line</item>
+    </style>
+
+    <style name="BGA.DialogVLine" parent="@style/OneMatch">
+        <item name="android:background">@color/dialog_line</item>
+    </style>
+
+    <style name="BGA.Button.Dialog" parent="@style/AutoWrap">
+        <item name="android:background">@drawable/selector_dialog_btn</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">@dimen/size_middle</item>
+        <item name="android:paddingTop">@dimen/size_middle</item>
+        <item name="android:textSize">@dimen/textSize_small</item>
+    </style>
+
 </resources>

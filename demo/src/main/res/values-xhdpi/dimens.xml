@@ -14,4 +14,5 @@
 
     <dimen name="rg_height_top">40dp</dimen>
     <dimen name="rg_height_bottom">60dp</dimen>
+    <dimen name="dialog_root_width">220dp</dimen>
 </resources>

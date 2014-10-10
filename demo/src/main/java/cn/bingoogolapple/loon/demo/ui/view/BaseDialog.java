@@ -43,5 +43,5 @@ public abstract class BaseDialog extends Dialog implements View.OnClickListener 
 
     @Override
     public void onClick(View v) {
-    };
+    }
 }

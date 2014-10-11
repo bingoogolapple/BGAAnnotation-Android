@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap"
+    android:padding="@dimen/size_small" >
+
+    <TextView
+        android:id="@+id/tv_view_setting_title"
+        style="@style/WrapWrap"
+        android:text="标题"
+        android:textColor="@color/tab_top_text_pressed"
+        android:textSize="@dimen/textSize_middle" />
+
+    <TextView
+        android:id="@+id/tv_view_setting_content"
+        style="@style/WrapWrap"
+        android:layout_below="@id/tv_view_setting_title"
+        android:layout_marginTop="@dimen/size_small"
+        android:text="状态"
+        android:textColor="@color/tab_top_text_unpressed"
+        android:textSize="@dimen/textSize_small" />
+
+    <ImageView
+        android:id="@+id/iv_view_setting_status"
+        android:layout_width="@dimen/view_setting_status_width"
+        android:layout_height="@dimen/view_setting_status_height"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/setting_on" />
+
+</RelativeLayout>

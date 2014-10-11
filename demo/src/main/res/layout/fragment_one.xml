@@ -1,15 +1,26 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/MatchMatchVertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center"
     android:background="@android:color/white">
 
     <Button
         android:id="@+id/btn_one_dataload"
-       style="@style/WrapWrap" android:text="ShowDataLoadDialog" />
+        style="@style/WrapWrap"
+        android:text="ShowDataLoadDialog" />
 
     <Button
         android:id="@+id/btn_one_confirm"
         android:layout_margin="@dimen/size_small"
-        style="@style/WrapWrap" android:text="ShowConfirmDialog" />
+        style="@style/WrapWrap"
+        android:text="ShowConfirmDialog" />
 
+    <cn.bingoogolapple.loon.demo.ui.view.SettingView
+        android:id="@+id/sv_one_bluetooth"
+        android:background="@color/dialog_line"
+        style="@style/MatchWrap"
+        app:content_off="已关闭"
+        app:content_on="已打开"
+        app:title="蓝牙功能"
+        android:layout_margin="@dimen/size_small" />
 </LinearLayout>

@@ -15,4 +15,7 @@
     <dimen name="rg_height_top">40dp</dimen>
     <dimen name="rg_height_bottom">60dp</dimen>
     <dimen name="dialog_root_width">220dp</dimen>
+
+    <dimen name="view_setting_status_width">70dp</dimen>
+    <dimen name="view_setting_status_height">40dp</dimen>
 </resources>

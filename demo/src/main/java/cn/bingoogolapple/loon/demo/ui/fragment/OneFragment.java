@@ -7,8 +7,10 @@ import cn.bingoogolapple.loon.demo.R;
 import cn.bingoogolapple.loon.demo.ui.view.ConfirmDialog;
 import cn.bingoogolapple.loon.demo.ui.view.DataLoadDialog;
 import cn.bingoogolapple.loon.demo.ui.view.DialogDelegate;
+import cn.bingoogolapple.loon.demo.ui.view.SettingView;
 import cn.bingoogolapple.loon.demo.util.ToastUtil;
 import cn.bingoogolapple.loon.library.LoonLayout;
+import cn.bingoogolapple.loon.library.LoonView;
 
 /**
  * Created by bingoogolapple on 14-10-10.
@@ -17,12 +19,26 @@ import cn.bingoogolapple.loon.library.LoonLayout;
 public class OneFragment extends BaseFragment {
     private DataLoadDialog mDataLoadDialog;
     private ConfirmDialog mConfirmDialog;
+    @LoonView(id = R.id.sv_one_bluetooth)
+    private SettingView mBluetoothSv;
 
     @Override
     protected void setListener() {
         mRootView.findViewById(R.id.btn_one_dataload).setOnClickListener(this);
         mRootView.findViewById(R.id.btn_one_confirm).setOnClickListener(this);
+        mBluetoothSv.setOnToggleChangeListener(new SettingView.OnToggleChangeListener() {
+            @Override
+            public void onOpen() {
+                ToastUtil.makeText("打开蓝牙功能");
+                mBluetoothSv.setChecked(true);
+            }
 
+            @Override
+            public void onClose() {
+                ToastUtil.makeText("关闭蓝牙功能");
+                mBluetoothSv.setChecked(false);
+            }
+        });
     }
 
     @Override

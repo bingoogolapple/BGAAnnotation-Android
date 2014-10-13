@@ -42,26 +42,26 @@ public class SettingView extends RelativeLayout implements View.OnClickListener 
     }
 
     private void initAttrs(Context context, AttributeSet attrs) {
-        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.SettingView);
-        final int N = a.getIndexCount();
+        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.SettingView);
+        final int N = typedArray.getIndexCount();
         for (int i = 0; i < N; i++) {
-            int attr = a.getIndex(i);
+            int attr = typedArray.getIndex(i);
             switch (attr) {
                 case R.styleable.SettingView_title:
-                    mTitleTv.setText(a.getText(attr));
+                    mTitleTv.setText(typedArray.getText(attr));
                     break;
                 case R.styleable.SettingView_content_on:
-                    mContentOn = a.getText(attr);
+                    mContentOn = typedArray.getText(attr);
                     break;
                 case R.styleable.SettingView_content_off:
-                    mContentOff = a.getText(attr);
+                    mContentOff = typedArray.getText(attr);
                     mStatusIv.setImageResource(R.drawable.setting_off);
                     mContentTv.setText(mContentOff);
                     mIsChecked = false;
                     break;
             }
         }
-        a.recycle();
+        typedArray.recycle();
     }
 
     public boolean isChecked() {

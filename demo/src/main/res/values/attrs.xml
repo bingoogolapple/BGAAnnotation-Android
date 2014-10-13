@@ -5,4 +5,17 @@
         <attr name="content_on" format="reference|string" />
         <attr name="content_off" format="reference|string" />
     </declare-styleable>
+
+    <declare-styleable name="BGAIndicator">
+        <attr name="textColor" format="color|reference" />
+        <attr name="textSizeNormal" format="dimension|reference" />
+        <attr name="textSizeSelected" format="dimension|reference" />
+        <attr name="triangleMarginBottom" format="dimension|reference" />
+        <attr name="triangleColor" format="color|reference" />
+        <attr name="triangleHeight" format="dimension|reference" />
+        <attr name="hasDivider" format="boolean" />
+        <attr name="dividerColor" format="color|reference" />
+        <attr name="dividerWidth" format="dimension|reference" />
+        <attr name="dividerVerticalMargin" format="dimension|reference" />
+    </declare-styleable>
 </resources>

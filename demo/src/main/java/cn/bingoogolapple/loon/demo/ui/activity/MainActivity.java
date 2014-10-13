@@ -6,9 +6,9 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import cn.bingoogolapple.loon.demo.R;
+import cn.bingoogolapple.loon.demo.ui.fragment.IndicatorFragment;
 import cn.bingoogolapple.loon.demo.ui.fragment.NestFragment;
 import cn.bingoogolapple.loon.demo.ui.fragment.OneFragment;
-import cn.bingoogolapple.loon.demo.ui.fragment.ThreeFragment;
 import cn.bingoogolapple.loon.demo.ui.fragment.TwoFragment;
 import cn.bingoogolapple.loon.library.LoonLayout;
 import cn.bingoogolapple.loon.library.LoonView;
@@ -79,7 +79,7 @@ public class MainActivity extends BaseActivity {
         mTabHost.setup(this, getSupportFragmentManager(), R.id.realtabcontent);
         mTabHost.addTab(mTabHost.newTabSpec(TabTag.OneTab.name()).setIndicator(""), OneFragment.class, null);
         mTabHost.addTab(mTabHost.newTabSpec(TabTag.TwoTab.name()).setIndicator(""), TwoFragment.class, null);
-        mTabHost.addTab(mTabHost.newTabSpec(TabTag.ThreeTab.name()).setIndicator(""), ThreeFragment.class, null);
+        mTabHost.addTab(mTabHost.newTabSpec(TabTag.ThreeTab.name()).setIndicator(""), IndicatorFragment.class, null);
         mTabHost.addTab(mTabHost.newTabSpec(TabTag.FourTab.name()).setIndicator(""), NestFragment.class, null);
     }
 

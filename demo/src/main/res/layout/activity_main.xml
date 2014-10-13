@@ -22,7 +22,7 @@
         <RadioButton
             android:id="@+id/rb_main_three"
             style="@style/BGA.Tab.RadioButton.Bottom"
-            android:text="Three" />
+            android:text="Indicator" />
 
         <RadioButton
             android:id="@+id/rb_main_nest"

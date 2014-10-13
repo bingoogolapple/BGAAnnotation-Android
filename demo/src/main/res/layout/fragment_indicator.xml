@@ -35,7 +35,7 @@
         app:textSizeNormal="14sp"
         app:textSizeSelected="18sp"
         app:hasDivider="true"
-        app:dividerColor="#3000"
+
         app:dividerVerticalMargin="8dp"
         app:dividerWidth="2dp"
         android:layout_width="match_parent"

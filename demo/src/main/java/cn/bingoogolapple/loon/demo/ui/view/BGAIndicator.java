@@ -79,7 +79,7 @@ public class BGAIndicator extends LinearLayout implements View.OnClickListener, 
                      */
                     mTriangleMarginBottom = typedArray.getDimensionPixelSize(attr, mTriangleMarginBottom);
                     break;
-                case R.styleable.BGAIndicator_triangleHeight:
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    case R.styleable.BGAIndicator_triangleHeight:
                     mTriangleHeight = typedArray.getDimensionPixelSize(attr, mTriangleHeight);
                     break;
                 case R.styleable.BGAIndicator_textColor:
@@ -135,13 +135,19 @@ public class BGAIndicator extends LinearLayout implements View.OnClickListener, 
             tabIndicator.setOnClickListener(this);
 
             TextView titleTv = (TextView) tabIndicator.findViewById(R.id.tv_indicator_title);
-            titleTv.setTextColor(mTextColor);
+            if(mTextColor != null) {
+                titleTv.setTextColor(mTextColor);
+            }
             titleTv.setTextSize(TypedValue.COMPLEX_UNIT_PX, mTextSizeNormal);
             titleTv.setText(mTabInfos.get(index).title);
 
             LayoutParams tabLp = new LayoutParams(0,LayoutParams.MATCH_PARENT,1);
             tabLp.gravity = Gravity.CENTER;
             tabIndicator.setLayoutParams(tabLp);
+            // 防止currentTab为0时，第一个tab文字颜色没变化
+            if(index == 0) {
+                resetTab(tabIndicator, true);
+            }
             this.addView(tabIndicator);
 
             if (index != mTabCount - 1 && mHasDivider) {
@@ -150,6 +156,8 @@ public class BGAIndicator extends LinearLayout implements View.OnClickListener, 
                 View vLine = new View(getContext());
                 if(mDividerDrawable != null) {
                     vLine.setBackgroundDrawable(mDividerDrawable);
+                } else {
+                    vLine.setBackgroundResource(mDividerColor);
                 }
                 vLine.setLayoutParams(dividerLp);
                 this.addView(vLine);

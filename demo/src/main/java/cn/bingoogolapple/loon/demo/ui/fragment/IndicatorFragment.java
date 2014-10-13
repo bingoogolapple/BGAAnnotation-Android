@@ -23,7 +23,6 @@ public class IndicatorFragment extends BaseFragment {
     private BGAIndicator mIndicator;
     @LoonView(id = R.id.pager)
     private ViewPager mPager;
-    private MyPagerAdapter mPagerAdapter;
     private List<BGAIndicator.TabInfo> mTabInfos;
 
     @Override
@@ -32,27 +31,6 @@ public class IndicatorFragment extends BaseFragment {
         mTabInfos.add(new BGAIndicator.TabInfo("选项一",NestFragment.NextOneFragment.class.getName()));
         mTabInfos.add(new BGAIndicator.TabInfo("选项二",NestFragment.NextTwoFragment.class.getName()));
         mTabInfos.add(new BGAIndicator.TabInfo("选项三",NestFragment.NextThreeFragment.class.getName()));
-        mPagerAdapter = new MyPagerAdapter(getChildFragmentManager());
-        mPager.setAdapter(mPagerAdapter);
-
-        mIndicator.initData(1,mTabInfos,mPager);
-    }
-
-    public class MyPagerAdapter extends FragmentPagerAdapter {
-
-        public MyPagerAdapter(FragmentManager fm) {
-            super(fm);
-        }
-
-        @Override
-        public int getCount() {
-            return mTabInfos.size();
-        }
-
-        @Override
-        public Fragment getItem(int position) {
-            return Fragment.instantiate(mApp, mTabInfos.get(position).fragmentClass);
-        }
-
+        mIndicator.initData(3,mTabInfos,mPager,getChildFragmentManager());
     }
 }

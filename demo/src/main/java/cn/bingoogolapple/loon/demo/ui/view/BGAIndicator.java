@@ -9,6 +9,9 @@ import android.graphics.Path;
 import android.graphics.drawable.Drawable;
 import android.os.Parcel;
 import android.os.Parcelable;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.util.TypedValue;
@@ -21,7 +24,6 @@ import android.widget.TextView;
 import java.util.List;
 
 import cn.bingoogolapple.loon.demo.R;
-import cn.bingoogolapple.loon.demo.util.Logger;
 
 /**
  * Created by bingoogolapple on 14-10-13.
@@ -52,7 +54,7 @@ public class BGAIndicator extends LinearLayout implements View.OnClickListener, 
     private int mTabCount = 0;
     private int mCurrentTabIndex = 0;
 
-    private int mCurrentScroll = 0;
+    private int mPagerScrollX = 0;
 
     private Path mPath = new Path();
 
@@ -114,12 +116,12 @@ public class BGAIndicator extends LinearLayout implements View.OnClickListener, 
     }
 
     // 初始化选项卡
-    public void initData(int currentTab, List<TabInfo> tabInfos, ViewPager viewPager) {
+    public void initData(int currentTab, List<TabInfo> tabInfos, ViewPager viewPager,FragmentManager fragmentManager) {
         this.removeAllViews();
         mViewPager = viewPager;
         mTabInfos = tabInfos;
         mTabCount = tabInfos.size();
-
+        mViewPager.setAdapter(new MyPagerAdapter(fragmentManager));
         mViewPager.setOnPageChangeListener(this);
 
         initTab(currentTab);
@@ -157,7 +159,7 @@ public class BGAIndicator extends LinearLayout implements View.OnClickListener, 
     }
 
     private void setCurrentTab(int index) {
-        if(mCurrentTabIndex != index) {
+        if(mCurrentTabIndex != index && index > -1 && index < mTabCount) {
             View oldTab = findViewById(BSSEEID + mCurrentTabIndex);
             resetTab(oldTab, false);
 
@@ -202,18 +204,18 @@ public class BGAIndicator extends LinearLayout implements View.OnClickListener, 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        int perItemWidth = getWidth();
-        float scrollX = mCurrentScroll;
+        int itemWidth = getWidth();
+        float indicatorScrollX = mPagerScrollX;
 
         if (mTabCount != 0) {
-            perItemWidth = getWidth() / mTabCount;
-            scrollX = (mCurrentScroll - (mCurrentTabIndex * getPagerWidth())) / mTabCount;
+            itemWidth = getWidth() / mTabCount;
+            indicatorScrollX = itemWidth * mPagerScrollX /getPagerRealWidth();
         }
 
         mPath.rewind();
         float offset = 20;
-        float left_x = mCurrentTabIndex * perItemWidth + offset + scrollX;
-        float right_x = (mCurrentTabIndex + 1) * perItemWidth - offset + scrollX;
+        float left_x = offset + indicatorScrollX;
+        float right_x = itemWidth - offset + indicatorScrollX;
         float top_y = getHeight() - mTriangleMarginBottom - mTriangleHeight;
         float bottom_y = getHeight() - mTriangleMarginBottom;
 
@@ -226,13 +228,13 @@ public class BGAIndicator extends LinearLayout implements View.OnClickListener, 
         canvas.drawPath(mPath, mPaintFooterTriangle);
     }
 
-    private int getPagerWidth() {
-        return getWidth() + mViewPager.getPageMargin();
+    private int getPagerRealWidth() {
+        return mViewPager.getWidth() + mViewPager.getPageMargin();
     }
 
     @Override
     public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-        mCurrentScroll = (mViewPager.getWidth() + mViewPager.getPageMargin()) * position + positionOffsetPixels;
+        mPagerScrollX = getPagerRealWidth() * position + positionOffsetPixels;
         postInvalidate();
     }
 
@@ -243,6 +245,24 @@ public class BGAIndicator extends LinearLayout implements View.OnClickListener, 
 
     @Override
     public void onPageScrollStateChanged(int state) {
+
+    }
+
+    public class MyPagerAdapter extends FragmentPagerAdapter {
+
+        public MyPagerAdapter(FragmentManager fm) {
+            super(fm);
+        }
+
+        @Override
+        public int getCount() {
+            return mTabInfos.size();
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            return Fragment.instantiate(getContext(), mTabInfos.get(position).fragmentClass);
+        }
 
     }
 

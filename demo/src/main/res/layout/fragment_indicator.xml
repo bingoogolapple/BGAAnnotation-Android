@@ -6,15 +6,15 @@
 
     <cn.bingoogolapple.loon.demo.ui.view.BGAIndicator
         android:id="@+id/indicator1"
-        android:background="#200f"
-        app:triangleColor="#5f0f"
+        android:background="@color/srl_green_light"
+        app:triangleColor="@color/srl_orange_light"
         app:triangleMarginBottom="0dp"
         app:triangleHeight="2dp"
         app:textColor="@color/tab_top_indicator"
         app:textSizeNormal="14sp"
         app:textSizeSelected="18sp"
         app:hasDivider="true"
-        app:dividerColor="#3000"
+        app:dividerColor="@color/srl_blue_bright"
         app:dividerVerticalMargin="8dp"
         app:dividerWidth="2dp"
         android:layout_width="300dp"
@@ -35,7 +35,7 @@
         app:textSizeNormal="14sp"
         app:textSizeSelected="18sp"
         app:hasDivider="true"
-
+        app:dividerColor="@color/srl_blue_bright"
         app:dividerVerticalMargin="8dp"
         app:dividerWidth="2dp"
         android:layout_width="match_parent"

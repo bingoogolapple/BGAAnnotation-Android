@@ -37,7 +37,5 @@ public class IndicatorFragment extends BaseFragment {
         mTabInfos.add(new BGAIndicator.TabInfo("选项三",NestFragment.NextThreeFragment.class.getName()));
         mIndicator1.initData(0,mTabInfos,mPager1,getChildFragmentManager());
         mIndicator2.initData(1,mTabInfos,mPager2,getChildFragmentManager());
-
-
     }
 }

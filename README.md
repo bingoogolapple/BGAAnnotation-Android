@@ -5,6 +5,11 @@ Android Annotation
 
 ![Image of LoonDemo](http://bingoshare.u.qiniudn.com/LoonDemo.gif)
 
+>扫描二维码下载Demo
+
+![Image of LoonDemo](http://bingoshare.u.qiniudn.com/LoonDemo.png)
+
+
 >BaseFragment.java
 
 ```java

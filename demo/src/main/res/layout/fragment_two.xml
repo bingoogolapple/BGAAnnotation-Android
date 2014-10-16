@@ -2,7 +2,19 @@
     style="@style/MatchMatchVertical"
     android:gravity="center"
     android:background="@android:color/white">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_two_container"
+        style="@style/MatchAuto" >
 
-    <TextView
-       style="@style/WrapWrap" android:text="Two" />
+        <ListView
+            android:id="@android:id/list"
+            style="@style/MatchMatch" >
+        </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <Button
+        android:id="@+id/btn_two_update"
+        android:padding="@dimen/size_middle"
+        android:background="@color/srl_green_light"
+        style="@style/MatchWrap" android:text="只重新加载条目二的数据" />
+
 </LinearLayout>

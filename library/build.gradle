@@ -11,8 +11,4 @@ android {
     }
 }
 
-dependencies {
-    compile 'com.android.support:support-v4:20.+'
-}
-
 apply from: './gradle-mvn-push.gradle'

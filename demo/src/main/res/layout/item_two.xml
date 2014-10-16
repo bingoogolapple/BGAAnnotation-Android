@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrapHorizontal"
+    android:gravity="center_vertical"
+    android:padding="@dimen/size_small" >
+
+    <ImageView
+        android:id="@+id/iv_item_two_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="@dimen/size_small"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_item_two_name"
+        style="@style/WrapWrap"
+        android:text="标题"
+        android:textColor="@color/tab_top_text_pressed"
+        android:textSize="@dimen/textSize_middle" />
+
+</LinearLayout>

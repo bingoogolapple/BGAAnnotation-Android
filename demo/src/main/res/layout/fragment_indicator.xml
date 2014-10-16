@@ -26,9 +26,9 @@
 
     <cn.bingoogolapple.loon.demo.ui.view.BGAIndicator
         android:id="@+id/indicator2"
-        android:background="#200f"
+        android:background="@color/srl_green_light"
         android:layout_marginTop="@dimen/size_middle"
-        app:triangleColor="#5f0f"
+        app:triangleColor="@color/srl_orange_light"
         app:triangleMarginBottom="0dp"
         app:triangleHeight="2dp"
         app:textColor="@color/tab_top_indicator"

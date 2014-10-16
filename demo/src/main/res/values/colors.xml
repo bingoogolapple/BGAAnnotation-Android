@@ -7,4 +7,8 @@
     <color name="dialog_stroke">#E9E9E9</color>
     <color name="dialog_line">#E0E0E0</color>
     <color name="dialog_line_title">#00a0e8</color>
+    <color name="srl_blue_bright">#ff00ddff</color>
+    <color name="srl_green_light">#ff99cc00</color>
+    <color name="srl_orange_light">#ffffbb33</color>
+    <color name="srl_red_light">#ffff4444</color>
 </resources>

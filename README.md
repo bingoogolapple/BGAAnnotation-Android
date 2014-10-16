@@ -3,14 +3,13 @@ Loon
 
 Android Annotation
 
+![Image of LoonDemo](http://bingoshare.u.qiniudn.com/LoonDemo3.gif)
 ![Image of LoonDemo](http://bingoshare.u.qiniudn.com/LoonDemo1.gif)
 ![Image of LoonDemo](http://bingoshare.u.qiniudn.com/LoonDemo2.gif)
-![Image of LoonDemo](http://bingoshare.u.qiniudn.com/LoonDemo3.gif)
 
 >扫描二维码下载Demo
 
 ![Image of LoonDemo](http://bingoshare.u.qiniudn.com/LoonDemo.png)
-
 
 >BaseFragment.java
 

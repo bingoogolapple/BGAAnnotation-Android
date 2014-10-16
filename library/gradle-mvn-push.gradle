@@ -6,7 +6,7 @@ def isReleaseBuild() {
 }
 
 def getReleaseRepositoryUrl() {
-    return hasProperty('RELEASE_REPOSITORY_URL') ? RELEASE_REPOSITORY_URL : 'http://localhost:8081/nexus/service/local/staging/deploy/maven2/'
+    return hasProperty('RELEASE_REPOSITORY_URL') ? RELEASE_REPOSITORY_URL : 'http://localhost:8081/nexus/content/repositories/releases/'
 }
 
 def getSnapshotRepositoryUrl() {

@@ -128,6 +128,7 @@ public class BGAIndicator extends LinearLayout implements View.OnClickListener, 
         postInvalidate();
     }
 
+    @SuppressWarnings("deprecation")
     private void initTab(int currentTab) {
         for (int index = 0; index < mTabCount; index++) {
             View tabIndicator = mInflater.inflate(R.layout.view_indicator, this, false);

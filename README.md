@@ -284,4 +284,4 @@ private class MyAdapter extends LoonRecyclerAdapter<User,ViewHolder> {
 };
 ```
 
-详细用法请查看demo
+##### 详细用法请查看[demo](https://github.com/bingoogolapple/Loon/tree/master/demo):feet:

@@ -1,4 +1,4 @@
-Loon
+:heartpulse:Loon:heartpulse:
 ====
 
 Android自动注入注解框架
@@ -16,6 +16,14 @@ PS：很多注解框架都有这个功能，它们同时还包含了数据库以
 >扫描二维码下载Demo
 
 ![Image of LoonDemo](http://bingoshare.u.qiniudn.com/LoonDemo.png)
+
+>Gradle
+
+```groovy
+dependencies {
+    compile 'cn.bingoogolapple.loon:library:1.0.0@aar'
+}
+```
 
 >BaseFragment.java
 

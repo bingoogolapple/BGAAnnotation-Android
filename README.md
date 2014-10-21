@@ -7,15 +7,12 @@ Android自动注入注解框架
 
 PS：很多注解框架都有这个功能，它们同时还包含了数据库以及网络请求等注解，但是有些项目中根本用不到数据库和网络请求，如果这时使用那些注解框架，处女座就要:angry:了
 
-效果图
-====
+#### 效果图
 ![Image of LoonDemo](http://bingoshare.u.qiniudn.com/LoonDemo3.gif)
 ![Image of LoonDemo](http://bingoshare.u.qiniudn.com/LoonDemo1.gif)
 ![Image of LoonDemo](http://bingoshare.u.qiniudn.com/LoonDemo2.gif)
 
->扫描二维码下载Demo
-
-![Image of LoonDemo](http://bingoshare.u.qiniudn.com/LoonDemo.png)
+#### [下载Demo](http://bingoshare.u.qiniudn.com/LoonDemo.apk)
 
 >Gradle
 

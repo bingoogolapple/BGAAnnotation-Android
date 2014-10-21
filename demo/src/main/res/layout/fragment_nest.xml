@@ -1,5 +1,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/MatchMatchVertical"
+    style="@style/MatchMatch.Vertical"
     android:background="@android:color/white">
 
     <RadioGroup

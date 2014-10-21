@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/WrapWrapHorizontal"
+    style="@style/WrapWrap.Horizontal"
     android:background="@drawable/dialog_dataload"
     android:gravity="center_vertical"
     android:padding="@dimen/size_middle" >

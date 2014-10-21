@@ -1,4 +1,4 @@
-:heartpulse:Loon:heartpulse:
+:heartpulse:Loon v1.1.0:heartpulse:
 ====
 
 Android自动注入注解框架
@@ -21,7 +21,7 @@ PS：很多注解框架都有这个功能，它们同时还包含了数据库以
 
 ```groovy
 dependencies {
-    compile 'cn.bingoogolapple.loon:library:1.0.0@aar'
+    compile 'cn.bingoogolapple.loon:library:1.1.0@aar'
 }
 ```
 

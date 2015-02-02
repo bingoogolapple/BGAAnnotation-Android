@@ -12,17 +12,17 @@ import java.util.List;
  * @param <T> 适配的数据类型
  * @param <V> ViewHolder的类型
  */
-public abstract class LoonRecyclerAdapter<T, V> extends BaseAdapter {
+public abstract class LoonListViewAdapter<T, V> extends BaseAdapter {
     protected Context mContext;
     protected List<T> mDatas;
     protected Class<V> mViewHolderClazz;
     protected AbsListView mAbsListView;
 
-    public LoonRecyclerAdapter(AbsListView absListView, Class<V> viewHolderClazz) {
+    public LoonListViewAdapter(AbsListView absListView, Class<V> viewHolderClazz) {
         this(absListView, viewHolderClazz, null);
     }
 
-    public LoonRecyclerAdapter(AbsListView absListView, Class<V> viewHolderClazz, List<T> datas) {
+    public LoonListViewAdapter(AbsListView absListView, Class<V> viewHolderClazz, List<T> datas) {
         mViewHolderClazz = viewHolderClazz;
         mAbsListView = absListView;
         mDatas = datas;

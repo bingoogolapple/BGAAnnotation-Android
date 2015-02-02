@@ -12,9 +12,6 @@ import cn.bingoogolapple.loonannotation.demo.util.ToastUtil;
 import cn.bingoogolapple.loonannotation.library.LoonLayout;
 import cn.bingoogolapple.loonannotation.library.LoonView;
 
-/**
- * Created by bingoogolapple on 14-10-10.
- */
 @LoonLayout(R.layout.fragment_one)
 public class OneFragment extends BaseFragment {
     private DataLoadDialog mDataLoadDialog;

@@ -17,7 +17,7 @@ import cn.bingoogolapple.loonannotation.demo.R;
 import cn.bingoogolapple.loonannotation.demo.ui.model.User;
 import cn.bingoogolapple.loonannotation.demo.ui.view.DataLoadDialog;
 import cn.bingoogolapple.loonannotation.library.LoonLayout;
-import cn.bingoogolapple.loonannotation.library.LoonRecyclerAdapter;
+import cn.bingoogolapple.loonannotation.library.LoonListViewAdapter;
 import cn.bingoogolapple.loonannotation.library.LoonView;
 
 /**
@@ -105,7 +105,7 @@ public class TwoFragment extends BaseFragment {
         private TextView nameTv;
     }
 
-    private class MyAdapter extends LoonRecyclerAdapter<User, ViewHolder> {
+    private class MyAdapter extends LoonListViewAdapter<User, ViewHolder> {
 
         public MyAdapter(AbsListView absListView, Class<ViewHolder> viewHolderClazz) {
             super(absListView, viewHolderClazz);

@@ -13,9 +13,6 @@ import cn.bingoogolapple.loonannotation.demo.util.Logger;
 import cn.bingoogolapple.loonannotation.library.LoonLayout;
 import cn.bingoogolapple.loonannotation.library.LoonView;
 
-/**
- * Created by bingoogolapple on 14-10-10.
- */
 @LoonLayout(R.layout.fragment_nest)
 public class NestFragment extends BaseFragment {
     private static final String TAG = NestFragment.class.getSimpleName();

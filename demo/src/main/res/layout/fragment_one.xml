@@ -15,7 +15,7 @@
         style="@style/WrapWrap"
         android:text="ShowConfirmDialog" />
 
-    <cn.bingoogolapple.loon.demo.ui.view.SettingView
+    <cn.bingoogolapple.loonannotation.demo.ui.view.SettingView
         android:id="@+id/sv_one_bluetooth"
         android:background="@color/dialog_line"
         style="@style/MatchWrap"

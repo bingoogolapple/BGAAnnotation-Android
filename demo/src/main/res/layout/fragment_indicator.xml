@@ -4,7 +4,7 @@
     android:gravity="center"
     android:background="@android:color/white">
 
-    <cn.bingoogolapple.loon.demo.ui.view.BGAIndicator
+    <cn.bingoogolapple.loonannotation.demo.ui.view.BGAIndicator
         android:id="@+id/indicator1"
         android:background="@color/srl_green_light"
         app:triangleColor="@color/srl_orange_light"
@@ -24,7 +24,7 @@
         android:id="@+id/pager1"
         style="@style/MatchAuto" />
 
-    <cn.bingoogolapple.loon.demo.ui.view.BGAIndicator
+    <cn.bingoogolapple.loonannotation.demo.ui.view.BGAIndicator
         android:id="@+id/indicator2"
         android:background="@color/srl_green_light"
         android:layout_marginTop="@dimen/size_middle"

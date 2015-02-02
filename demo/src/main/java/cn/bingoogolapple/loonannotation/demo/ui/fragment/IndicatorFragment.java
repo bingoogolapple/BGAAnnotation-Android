@@ -5,6 +5,7 @@ import android.support.v4.view.ViewPager;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import cn.bingoogolapple.loonannotation.demo.R;
 import cn.bingoogolapple.loonannotation.demo.ui.view.BGAIndicator;
 import cn.bingoogolapple.loonannotation.library.LoonLayout;

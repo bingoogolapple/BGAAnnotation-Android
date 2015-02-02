@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/E:/git/LoonAnnotation/library/src/main/res/values/styles.xml -->
+    <!-- From: file:/Users/bingoogol/git/LoonAnnotation/library/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AutoMatch">
         <item name="android:layout_width">0dp</item>

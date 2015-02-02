@@ -1,6 +1,0 @@
-E:\git\LoonAnnotation\demo\build\intermediates\classes\debug
-E:\git\LoonAnnotation\demo\build\intermediates\pre-dexed\debug\support-annotations-21.0.2-e0351ed652cd539bc9661e7373d705e9ef0de0fb.jar
-E:\git\LoonAnnotation\demo\build\intermediates\pre-dexed\debug\classes-3c20e6ca377446e29f5f6692cc047516825713fa.jar
-E:\git\LoonAnnotation\demo\build\intermediates\pre-dexed\debug\internal_impl-21.0.2-63a189148ba5cc7596cb8013041be7bacdec6532.jar
-E:\git\LoonAnnotation\demo\build\intermediates\pre-dexed\debug\classes-efab536162cd11309eeb86c5876ea887d61e6e9e.jar
-E:\git\LoonAnnotation\demo\build\intermediates\pre-dexed\debug\classes-40d5e7fbdc347209c22cbd0462a854881ec50b8b.jar

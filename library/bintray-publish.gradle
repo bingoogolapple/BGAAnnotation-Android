@@ -7,11 +7,10 @@ publishing {
             groupId GROUP
             version VERSION_NAME
             artifactId POM_ARTIFACT_ID
-//            artifact "build/outputs/aar/library-release.aar"
-//            artifact androidJar
+            artifact "${project.buildDir}/outputs/aar/${project.name}-release.aar"
             artifact androidJavadocsJar
             artifact androidSourcesJar
-            artifact bundleRelease
+
             pom.withXml {
                 Node root = asNode()
                 root.appendNode('name', POM_ARTIFACT_ID)
@@ -44,13 +43,14 @@ def getBintrayApiKeyProperty() {
     return hasProperty('bintrayApiKey') ? bintrayApiKey : ""
 }
 
+// gradle bintray
 bintray {
     user = bintrayUserProperty
     key = bintrayApiKeyProperty
     publications = ['mavenJava']
 
     dryRun = false
-    publish = false
+    publish = true
     pkg {
         repo = 'maven'
         name = POM_ARTIFACT_ID
@@ -59,7 +59,7 @@ bintray {
         issueTrackerUrl = ISSUE_URL
         vcsUrl = GIT_URL
         licenses = ['Apache-2.0']
-        labels = ['android', 'annotation']
+        labels = ['android', 'aar']
         publicDownloadNumbers = true
 
         version {

@@ -13,12 +13,8 @@ task androidSourcesJar(type: Jar) {
     from android.sourceSets.main.java.sourceFiles
 }
 
-task androidJar(type: Jar) {
-    from 'build/intermediates/classes/release'
-}
-
 artifacts {
     archives androidSourcesJar
     archives androidJavadocsJar
-    archives androidJar
+    "${project.buildDir}/outputs/aar/${project.name}-release.aar"
 }

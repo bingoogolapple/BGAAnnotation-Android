@@ -8,21 +8,17 @@ import android.widget.BaseAdapter;
 
 import java.util.List;
 
-/**
- * @param <T> 适配的数据类型
- * @param <V> ViewHolder的类型
- */
-public abstract class LoonListViewAdapter<T, V> extends BaseAdapter {
+public abstract class LoonListViewAdapter<M, VH> extends BaseAdapter {
     protected Context mContext;
-    protected List<T> mDatas;
-    protected Class<V> mViewHolderClazz;
+    protected List<M> mDatas;
+    protected Class<VH> mViewHolderClazz;
     protected AbsListView mAbsListView;
 
-    public LoonListViewAdapter(AbsListView absListView, Class<V> viewHolderClazz) {
+    public LoonListViewAdapter(AbsListView absListView, Class<VH> viewHolderClazz) {
         this(absListView, viewHolderClazz, null);
     }
 
-    public LoonListViewAdapter(AbsListView absListView, Class<V> viewHolderClazz, List<T> datas) {
+    public LoonListViewAdapter(AbsListView absListView, Class<VH> viewHolderClazz, List<M> datas) {
         mViewHolderClazz = viewHolderClazz;
         mAbsListView = absListView;
         mDatas = datas;
@@ -47,7 +43,7 @@ public abstract class LoonListViewAdapter<T, V> extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         if (convertView == null) {
-            V viewHolder = null;
+            VH viewHolder = null;
             try {
                 viewHolder = mViewHolderClazz.newInstance();
             } catch (Exception e) {
@@ -56,11 +52,11 @@ public abstract class LoonListViewAdapter<T, V> extends BaseAdapter {
             convertView = Loon.injectView2ViewHolderOrFragment(viewHolder, mContext);
             convertView.setTag(viewHolder);
         }
-        initViewHolder((V) convertView.getTag(), mDatas.get(position), position);
+        initViewHolder((VH) convertView.getTag(), mDatas.get(position), position);
         return convertView;
     }
 
-    public void setDatas(List<T> datas) {
+    public void setDatas(List<M> datas) {
         mDatas = datas;
         notifyDataSetChanged();
     }
@@ -72,6 +68,6 @@ public abstract class LoonListViewAdapter<T, V> extends BaseAdapter {
         getView(position, mAbsListView.getChildAt(position), mAbsListView);
     }
 
-    protected abstract void initViewHolder(V viewHolder, T listItem, int position);
+    protected abstract void initViewHolder(VH viewHolder, M listItem, int position);
 
 }

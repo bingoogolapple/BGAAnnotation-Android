@@ -10,8 +10,8 @@ import cn.bingoogolapple.loonannotation.demo.ui.fragment.IndicatorFragment;
 import cn.bingoogolapple.loonannotation.demo.ui.fragment.NestFragment;
 import cn.bingoogolapple.loonannotation.demo.ui.fragment.OneFragment;
 import cn.bingoogolapple.loonannotation.demo.ui.fragment.TwoFragment;
-import cn.bingoogolapple.loonannotation.library.LoonLayout;
-import cn.bingoogolapple.loonannotation.library.LoonView;
+import cn.bingoogolapple.loonannotation.LoonLayout;
+import cn.bingoogolapple.loonannotation.LoonView;
 
 /**
  * Created by bingoogolapple on 14-10-10.

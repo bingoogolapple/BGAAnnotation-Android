@@ -1,4 +1,4 @@
-package cn.bingoogolapple.loonannotation.library;
+package cn.bingoogolapple.loonannotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

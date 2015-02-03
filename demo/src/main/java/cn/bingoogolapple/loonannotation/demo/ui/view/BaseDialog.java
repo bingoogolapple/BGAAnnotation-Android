@@ -5,11 +5,8 @@ import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 
-import cn.bingoogolapple.loonannotation.library.Loon;
+import cn.bingoogolapple.loonannotation.Loon;
 
-/**
- * Created by bingoogolapple on 14-10-10.
- */
 public abstract class BaseDialog extends Dialog implements View.OnClickListener {
 
     public BaseDialog(Context context) {

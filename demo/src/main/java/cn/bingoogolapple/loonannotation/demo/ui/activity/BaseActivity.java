@@ -6,7 +6,7 @@ import android.support.v4.content.LocalBroadcastManager;
 import android.view.View;
 
 import cn.bingoogolapple.loonannotation.demo.App;
-import cn.bingoogolapple.loonannotation.library.Loon;
+import cn.bingoogolapple.loonannotation.Loon;
 
 
 /**
@@ -38,7 +38,6 @@ public abstract class BaseActivity extends FragmentActivity implements View.OnCl
 
     @Override
     public void onClick(View v) {
-
     }
 
     @Override

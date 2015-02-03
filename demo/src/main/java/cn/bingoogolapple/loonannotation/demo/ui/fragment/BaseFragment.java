@@ -9,12 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import cn.bingoogolapple.loonannotation.demo.App;
-import cn.bingoogolapple.loonannotation.library.Loon;
+import cn.bingoogolapple.loonannotation.Loon;
 
-
-/**
- * Created by bingoogolapple on 14-10-10.
- */
 public abstract class BaseFragment extends Fragment implements View.OnClickListener {
     protected App mApp;
     protected LocalBroadcastManager mLocalBroadcastManager;

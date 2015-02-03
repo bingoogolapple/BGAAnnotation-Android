@@ -9,8 +9,8 @@ import cn.bingoogolapple.loonannotation.demo.ui.view.DataLoadDialog;
 import cn.bingoogolapple.loonannotation.demo.ui.view.DialogDelegate;
 import cn.bingoogolapple.loonannotation.demo.ui.view.SettingView;
 import cn.bingoogolapple.loonannotation.demo.util.ToastUtil;
-import cn.bingoogolapple.loonannotation.library.LoonLayout;
-import cn.bingoogolapple.loonannotation.library.LoonView;
+import cn.bingoogolapple.loonannotation.LoonLayout;
+import cn.bingoogolapple.loonannotation.LoonView;
 
 @LoonLayout(R.layout.fragment_one)
 public class OneFragment extends BaseFragment {

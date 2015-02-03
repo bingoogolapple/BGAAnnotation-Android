@@ -16,9 +16,9 @@ import java.util.List;
 import cn.bingoogolapple.loonannotation.demo.R;
 import cn.bingoogolapple.loonannotation.demo.ui.model.User;
 import cn.bingoogolapple.loonannotation.demo.ui.view.DataLoadDialog;
-import cn.bingoogolapple.loonannotation.library.LoonLayout;
-import cn.bingoogolapple.loonannotation.library.LoonListViewAdapter;
-import cn.bingoogolapple.loonannotation.library.LoonView;
+import cn.bingoogolapple.loonannotation.LoonLayout;
+import cn.bingoogolapple.loonannotation.LoonListViewAdapter;
+import cn.bingoogolapple.loonannotation.LoonView;
 
 /**
  * Created by bingoogolapple on 14-10-10.

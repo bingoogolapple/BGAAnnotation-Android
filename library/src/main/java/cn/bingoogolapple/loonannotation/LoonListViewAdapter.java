@@ -1,4 +1,4 @@
-package cn.bingoogolapple.loonannotation.library;
+package cn.bingoogolapple.loonannotation;
 
 import android.content.Context;
 import android.view.View;

@@ -9,13 +9,10 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import cn.bingoogolapple.loonannotation.demo.R;
-import cn.bingoogolapple.loonannotation.library.Loon;
-import cn.bingoogolapple.loonannotation.library.LoonLayout;
-import cn.bingoogolapple.loonannotation.library.LoonView;
+import cn.bingoogolapple.loonannotation.Loon;
+import cn.bingoogolapple.loonannotation.LoonLayout;
+import cn.bingoogolapple.loonannotation.LoonView;
 
-/**
- * Created by bingoogolapple on 14-10-11.
- */
 @LoonLayout(R.layout.view_setting)
 public class SettingView extends RelativeLayout implements View.OnClickListener {
     @LoonView(R.id.tv_view_setting_title)

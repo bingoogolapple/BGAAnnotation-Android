@@ -36,17 +36,17 @@ publishing {
 }
 
 def getBintrayUserProperty() {
-    return hasProperty('bintrayUser') ? bintrayUser : ""
+    return hasProperty('BINTRAY_USER') ? BINTRAY_USER : ""
 }
 
 def getBintrayApiKeyProperty() {
-    return hasProperty('bintrayApiKey') ? bintrayApiKey : ""
+    return hasProperty('BINTRAY_APIKEY') ? BINTRAY_APIKEY : ""
 }
 
 // gradle bintray
 bintray {
-    user = bintrayUserProperty
-    key = bintrayApiKeyProperty
+    user = getBintrayUserProperty()
+    key = getBintrayApiKeyProperty()
     publications = ['mavenJava']
 
     dryRun = false

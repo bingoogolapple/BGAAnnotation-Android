@@ -21,6 +21,12 @@ def getRepositoryPassword() {
     return hasProperty('NEXUS_PASSWORD') ? NEXUS_PASSWORD : ""
 }
 
+artifacts {
+    archives androidSourcesJar
+    archives androidJavadocsJar
+    "${project.buildDir}/outputs/aar/${project.name}-release.aar"
+}
+
 afterEvaluate { project ->
     // gradle -q uploadArchives
     uploadArchives {

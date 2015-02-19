@@ -15,6 +15,6 @@ android {
 
 dependencies {
     compile 'com.android.support:appcompat-v7:21.0.2'
-    compile project(':library')
-//    compile(group: 'cn.bingoogolapple', name: 'bga-annotation', version: '1.0.0', ext: 'aar')
+//    compile project(':library')
+    compile(group: 'cn.bingoogolapple', name: 'bga-annotation', version: '1.0.0', ext: 'aar')
 }

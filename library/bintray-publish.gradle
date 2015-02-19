@@ -58,7 +58,7 @@ bintray {
         websiteUrl = POM_URL
         issueTrackerUrl = ISSUE_URL
         vcsUrl = GIT_URL
-        licenses = ['Apache-2.0']
+        licenses = POM_LICENCE_NAME
         labels = ['android', 'aar']
         publicDownloadNumbers = true
 

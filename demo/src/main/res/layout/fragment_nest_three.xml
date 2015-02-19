@@ -4,5 +4,7 @@
     android:background="@android:color/white">
 
     <TextView
-       style="@style/WrapWrap" android:text="NestThree" />
+        style="@style/WrapWrap"
+        android:textColor="@android:color/black"
+        android:text="NestThree" />
 </LinearLayout>

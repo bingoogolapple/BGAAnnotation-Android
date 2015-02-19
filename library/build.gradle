@@ -14,12 +14,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:21.0.2'
 }
 
-task hello {
-    doLast {
-        println "${project.buildDir}/outputs/aar/${project.name}-release.aar"
-    }
-}
-
 apply from: 'android-artifacts.gradle'
 apply from: 'central-publish.gradle'
 apply from: 'bintray-publish.gradle'

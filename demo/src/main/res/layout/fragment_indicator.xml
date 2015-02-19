@@ -4,7 +4,7 @@
     android:gravity="center"
     android:background="@android:color/white">
 
-    <cn.bingoogolapple.loonannotation.demo.ui.view.BGAIndicator
+    <cn.bingoogolapple.bgaannotation.demo.ui.widget.BGAIndicator
         android:id="@+id/indicator1"
         android:background="@color/srl_green_light"
         app:triangleColor="@color/srl_orange_light"
@@ -14,7 +14,7 @@
         app:textSizeNormal="14sp"
         app:textSizeSelected="18sp"
         app:hasDivider="true"
-        app:dividerColor="@color/srl_blue_bright"
+        app:dividerColor="@android:color/transparent"
         app:dividerVerticalMargin="8dp"
         app:dividerWidth="2dp"
         android:layout_width="300dp"
@@ -24,7 +24,7 @@
         android:id="@+id/pager1"
         style="@style/MatchAuto" />
 
-    <cn.bingoogolapple.loonannotation.demo.ui.view.BGAIndicator
+    <cn.bingoogolapple.bgaannotation.demo.ui.widget.BGAIndicator
         android:id="@+id/indicator2"
         android:background="@color/srl_green_light"
         android:layout_marginTop="@dimen/size_middle"

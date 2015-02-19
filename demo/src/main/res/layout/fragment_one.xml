@@ -15,12 +15,12 @@
         style="@style/WrapWrap"
         android:text="ShowConfirmDialog" />
 
-    <cn.bingoogolapple.loonannotation.demo.ui.view.SettingView
+    <cn.bingoogolapple.bgaannotation.demo.ui.widget.SettingView
         android:id="@+id/sv_one_bluetooth"
         android:background="@color/dialog_line"
         style="@style/MatchWrap"
         app:content_off="已关闭"
         app:content_on="已打开"
-        app:title="蓝牙功能"
+        app:sv_title="蓝牙功能"
         android:layout_margin="@dimen/size_small" />
 </LinearLayout>

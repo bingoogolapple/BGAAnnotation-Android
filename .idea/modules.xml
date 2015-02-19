@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/LoonAnnotation.iml" filepath="$PROJECT_DIR$/LoonAnnotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BGAAnnotation.iml" filepath="$PROJECT_DIR$/BGAAnnotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
     </modules>

@@ -1,4 +1,4 @@
-:heartpulse:BGAAnnotation v1.0.0:heartpulse:
+:heartpulse:BGAAnnotation-Android v1.0.0:heartpulse:
 ====
 
 Android自动注入注解框架
@@ -20,4 +20,4 @@ dependencies {
 }
 ```
 
-##### 详细用法请查看[demo](https://github.com/bingoogolapple/BGAAnnotation/tree/master/demo):feet:
+##### 详细用法请查看[demo](https://github.com/bingoogolapple/BGAAnnotation-Android/tree/master/demo):feet:

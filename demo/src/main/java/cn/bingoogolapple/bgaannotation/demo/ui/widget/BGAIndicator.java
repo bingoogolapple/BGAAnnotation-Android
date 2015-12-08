@@ -51,8 +51,6 @@ public class BGAIndicator extends LinearLayout implements View.OnClickListener, 
     private int mTabCount = 0;
     private int mCurrentTabIndex = 0;
 
-    private int mPagerScrollX = 0;
-
     private Path mPath = new Path();
 
     public BGAIndicator(Context context, AttributeSet attrs) {
@@ -211,11 +209,11 @@ public class BGAIndicator extends LinearLayout implements View.OnClickListener, 
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         int itemWidth = getWidth();
-        float indicatorScrollX = mPagerScrollX;
+        float indicatorScrollX = 0;
 
         if (mTabCount != 0) {
             itemWidth = getWidth() / mTabCount;
-            indicatorScrollX = itemWidth * mPagerScrollX /getPagerRealWidth();
+            indicatorScrollX = itemWidth * scrollRate;
         }
 
         mPath.rewind();
@@ -234,13 +232,14 @@ public class BGAIndicator extends LinearLayout implements View.OnClickListener, 
         canvas.drawPath(mPath, mPaintFooterTriangle);
     }
 
-    private int getPagerRealWidth() {
-        return mViewPager.getWidth() + mViewPager.getPageMargin();
-    }
+    /**
+     * viewpager and tab have the same scroll rate
+     */
+    private float scrollRate;
 
     @Override
     public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-        mPagerScrollX = getPagerRealWidth() * position + positionOffsetPixels;
+        scrollRate=position+positionOffset;
         postInvalidate();
     }
 
